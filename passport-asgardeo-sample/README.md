@@ -1,24 +1,24 @@
 # Node.js Asgardeo Sample
 
-This is a sample [Express.js](https://expressjs.com) app that uses [Passport.js](http://passportjs.org) and [Asgardeo](https://wso2.com/asgardeo/) for authentication.
+This is a sample [Express.js](https://expressjs.com) app that uses [Passport.js](http://passportjs.org) with [Asgardeo](https://wso2.com/asgardeo/) or [WSO2 Identity Server](https://wso2.com/identity-server/) for authentication.
 
-For more information, read the step-by-step [guide](https://wso2.com/asgardeo/docs/complete-guides/nodejs/introduction).
+For more information, read the step-by-step [guide](https://wso2.com/asgardeo/docs/complete-guides/nodejs/introduction). This guide is applicable for both Asgardeo and WSO2 Identity Server.
 
 ## Getting Started
 
 1. Clone this repository:
 
-2. Sign up for a free Asgardeo account [here](https://wso2.com/asgardeo).
+2. Sign up for a free Asgardeo account [here](https://wso2.com/asgardeo) (Skip this step if you are using IS).
 
-3. Sign into Asgardeo console and navigate to **Applications > New Application**. Select Traditional Web Application
+3. Sign into Asgardeo/IS console and navigate to **Applications > New Application**. Select Traditional Web Application
 
-4. Select OpenID Connect (OIDC) as the protocol and complete the wizard popup by providing a suitable name and the authorized redirect URL `http://localhost:3000/oauth2/redirect` (**Note**: The authorized redirect URL determines where Asgardeo should send users after they successfully log in. Typically, this will be the web address where your application is hosted. For this guide, we'll use `http://localhost:3000/oauth2/redirect`, as the sample application will be accessible at this URL).
+4. Select OpenID Connect (OIDC) as the protocol and complete the wizard popup by providing a suitable name and the authorized redirect URL `http://localhost:3000/oauth2/redirect` (**Note**: The authorized redirect URL determines where Asgardeo/IS should send users after they successfully log in. Typically, this will be the web address where your application is hosted. For this guide, we'll use `http://localhost:3000/oauth2/redirect`, as the sample application will be accessible at this URL).
 
-5. Once you create the application, you will be directed to the Quick Start tab of the created application which will guide you to integrate login to your application in several technologies (**Note**: Information available in the Quick Start tab of your app are required to configure Asgardeo in the Node.js app).
+5. Once you create the application, you will be directed to the Quick Start tab of the created application which will guide you to integrate login to your application in several technologies (**Note**: Information available in the Quick Start tab of your app are required to configure Asgardeo/IS in the Node.js app).
 
 6. Navigate to **User Management > Users** and [create a new user](https://wso2.com/asgardeo/docs/guides/users/manage-users/#onboard-users).
 
-6. Create the .env file in the root of the project and add the environment variables as shown below:
+6. Create the `.env` file in the root of the project and add the environment variables as shown below:
 
 ```
 ASGARDEO_ORGANISATION=<asgardeo_organization_name>
@@ -48,3 +48,4 @@ npm start
 - 📖 [Express.js docs](https://expressjs.com)
 - 📖 [Passport.js docs](https://www.passportjs.org/docs)
 - 📖 [Asgardeo docs](https://wso2.com/asgardeo/docs)
+- 📖 [WSO2 IS docs](https://is.docs.wso2.com/en/latest/)
